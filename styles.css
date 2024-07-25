@@ -8,6 +8,7 @@
 .ofertas{
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .card img{   /** a las imagenes de la card ... */
@@ -15,4 +16,12 @@
     width: 100%;
     object-fit: contain; 
     
+}
+
+.historia{
+    margin: 100px 5px 100px 5px;
+}
+
+.ofertas .card p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }

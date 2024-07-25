@@ -11,15 +11,22 @@
 
     <form action="">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre">
+        <input type="text" id="nombre" required>
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido">
+        <input type="text" id="apellido" >
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono">
+        <label for="caja">Consulta:</label>
+        <input type="text" id="caja" placeholder="Introduzca su Consulta" maxlength="50" required>
+        
 
         <button id="enviar">Enviar</button>
     </form>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" referrerpolicy="no-referrer"></script> <!--copiamos la libreria fileSaver.js-->
-    <script src="scripts.js"></script>
+    <script src="contacto.js"></script>
 
 </body>
 </html>
