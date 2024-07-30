@@ -9,23 +9,23 @@
 <body>
     <h2>Formulario de Contacto</h2>
 
-    <form action="">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required>
+    <form action="" id="myForm">
+        <!--<label for="nombre">Nombre:</label>-->
+        <input type="text" id="nombre" required minlength="3" maxlength="30">
         <label for="apellido">Apellido:</label>
         <input type="text" id="apellido" >
         <label for="email">Email:</label>
         <input type="email" id="email" required>
         <label for="telefono">Telefono:</label>
-        <input type="tel" id="telefono">
+        <input type="number" pattern="[0-9]{10}" id="telefono">
         <label for="caja">Consulta:</label>
         <input type="text" id="caja" placeholder="Introduzca su Consulta" maxlength="50" required>
         
-
-        <button id="enviar">Enviar</button>
+        <button id="enviar" type="submit">Enviar</button>  
+    
     </form>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" referrerpolicy="no-referrer"></script> <!--copiamos la libreria fileSaver.js-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" referrerpolicy="no-referrer"></script> <!--copiamos la libreria fileSaver.js-->
     <script src="contacto.js"></script>
 
 </body>

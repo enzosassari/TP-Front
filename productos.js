@@ -23,13 +23,26 @@ let btnLimon = document.getElementById("btnLimon");
 
 let totalCompra = 0;
 
+
+function actualizarDatos(){
+
+}
+
+function borrarInputs(){
+    inputArroz.value = " "; 
+    inputPapa.value = " "; 
+    inputLimon.value = " "; 
+}
+
+
 btnArroz.addEventListener("click", ()=>{
     let cantidadArroz = document.getElementById("inputArroz").value;
-    if (cantidadArroz<=producto[0].cantidad){
+    if (cantidadArroz > 0 && cantidadArroz <=producto[0].cantidad){
         producto[0].cantidad -= cantidadArroz ;
         totalCompra += (producto[0].precio * cantidadArroz);
         document.querySelector(".arroz").innerHTML=`El producto ${producto[0].nombre} tiene un stock de ${producto[0].cantidad}`;  
         document.querySelector("#totalCompra").innerHTML= ("El total de la compra es : " + totalCompra); 
+        borrarInputs();
     }else{
         alert("ERROR! STOCK INSUFICIENTE");
     }
@@ -38,11 +51,12 @@ btnArroz.addEventListener("click", ()=>{
 
 btnPapa.addEventListener("click", ()=>{
     let cantidadPapa = document.getElementById("inputPapa").value;
-    if (cantidadPapa<=producto[1].cantidad){
+    if (cantidadPapa > 0 && cantidadPapa<=producto[1].cantidad){
         producto[1].cantidad -= cantidadPapa ;
         totalCompra += (producto[1].precio * cantidadPapa);
         document.querySelector(".papa").innerHTML=`El producto ${producto[1].nombre} tiene un stock de ${producto[1].cantidad}`;
         document.querySelector("#totalCompra").innerHTML= ("El total de la compra es : " + totalCompra);   
+        inputPapa.value = " "; 
     }else{
         alert("ERROR! STOCK INSUFICIENTE");
     }
@@ -51,11 +65,12 @@ btnPapa.addEventListener("click", ()=>{
  
  btnLimon.addEventListener("click", ()=>{
     let cantidadLimon = document.getElementById("inputLimon").value;
-    if (cantidadLimon<=producto[2].cantidad){
+    if (cantidadLimon > 0 && cantidadLimon<=producto[2].cantidad){
         producto[2].cantidad -= cantidadLimon ;
         totalCompra += (producto[2].precio * cantidadLimon);
         document.querySelector(".limon").innerHTML=`El producto ${producto[2].nombre} tiene un stock de ${producto[2].cantidad}`;  
         document.querySelector("#totalCompra").innerHTML= ("El total de la compra es : " + totalCompra); 
+        inputLimon.value = " "; 
     }else{
         alert("ERROR! STOCK INSUFICIENTE");
     }

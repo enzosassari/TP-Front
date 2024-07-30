@@ -1,19 +1,31 @@
 
-
 html{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
 header{
     display: flex;
-    margin-top: 75px;
     width: 100%;
-    height: 50px;
+    height: 100px;
     background-color: rgba(255, 127, 80, 0.842); 
     align-items: center;
-    align-content: center;
-    justify-content: center;
+    justify-content:flex-start;
+}
+
+.logo{
+    width: 80px;
+    height: auto; /* Mantener la proporción */
+    margin: 50px;
+}
+
+
+.imagenHistoria {
+    width: 500px;
+}
+
+.imagenHistoria2 {
+    margin: 10px;
+    width: 400px;
 }
 
 nav a{
@@ -32,29 +44,50 @@ footer{
 }
 
 
-.card {
-    width: 300px;
-    height: 250px;
-    background-color: cadetblue;
-    border-radius: 5px;
-}
-
 .ofertas{
+    margin: 100px;
     display: flex;
     justify-content: space-evenly;
-    
 }
 
+
+.card {
+    width: 320px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(132, 126, 126);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card img:hover {
+    background-color: beige;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
 .card img{   /** a las imagenes de la card ... */
-    height: 100%;
-    width: 100%;
-    object-fit: contain; 
+    height: 350px;
+    width: 280px;
+    border-radius: 10px;
+    
     
 }
 
 .historia{
-    margin: 100px 5px 100px 5px;
+    display: flex;
+    justify-content: center;
+    margin: 100px 300px 100px 300px;
+    align-items: center;
+    flex-direction: row;
 }
+
+.historia-p{
+margin: 30px;
+}
+
 
 .ofertas .card p{
     font-family:Verdana, Geneva, Tahoma, sans-serif
