@@ -7,29 +7,109 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <img src="Imagenes/Green Circle Online Store Shopping Basket Logo2.png" alt="logotipo" class="logoHeader">
+        </div>
+        <nav>
+            <a href="index.html" target="_blank"> INICIO </a>
+            <a href="productos.html" target="_blank"> PRODUCTOS </a>
+            <a href="contacto.html" target="_blank"> CONTACTO </a>
+        </nav>
+    </header>
+
     <h1 id="titulo">Productos</h1>
 
-    <ul>
-        <p>ARROZ</p>
-            <li class="arroz"> </li>
-            <input type="number" id="inputArroz" placeholder="Cantidad" min="0">
-            <button id="btnArroz">Comprar</button>
+    <div class="productos">
 
-        <p>PAPA</p>
-            <li class="papa"></li>
-            <input type="number" id="inputPapa" placeholder="Cantidad" min="0">
-            <button id="btnPapa">Comprar</button>
+            <div class="productoContainer">
+                <img class="imgProducto" src="Imagenes/yerbaUnion.jpg" alt="yerba Union">
+                <p>Precio $ <span id="precioProducto1"></span></p>
+                <p>Stock disponible: <span id="stockProducto1"></span></p>
+                <input type="number" id="cantidadInput1" placeholder="Ingrese cantidad" min="0">
+                <button id="comprarButton1">Comprar</button>
+            </div>
 
-        <p>LIMON</p>
-            <li class="limon"></li>
-            <input type="number" id="inputLimon" placeholder="Cantidad" min="0">
-            <button id="btnLimon">Comprar</button>
+            <div class="productoContainer">
+                <img class="imgProducto" src="Imagenes/dulceBatata.jpg" alt="yerba Union">
+                <p>Stock disponible: <span id="stockProducto2"></span></p>
+                <input type="number" id="cantidadInput2" placeholder="Ingrese cantidad" min="0">
+                <button id="comprarButton2">Comprar</button>
+            </div>
+
+            <div class="productoContainer">
+                <img class="imgProducto" src="Imagenes/vinoDonNicanor.jpg" alt="yerba Union">
+                <p>Stock disponible: <span id="stockProducto3"></span></p>
+                <input type="number" id="cantidadInput3" placeholder="Ingrese cantidad" min="0">
+                <button id="comprarButton3">Comprar</button>
+            </div>
+
         
-        <p id="totalCompra"> </p>
-    </ul>
+            <div class="productoContainer">
+                <img class="imgProducto" src="Imagenes/avenaMorixe.jpg" alt="avena morixe">
+                <p>Stock disponible: <span id="stockProducto4"></span></p>
+                <input type="number" id="cantidadInput4" placeholder="Ingrese cantidad" min="0">
+                <button id="comprarButton4">Comprar</button>
+            </div>
+
+            <div class="productoContainer">
+                <img class="imgProducto" src="Imagenes/aceiteLegitimo.jpg" alt="aceite Legitimo">
+                <p>Stock disponible: <span id="stockProducto5"></span></p>
+                <input type="number" id="cantidadInput5" placeholder="Ingrese cantidad" min="0">
+                <button id="comprarButton5">Comprar</button>
+            </div>
+            
+            <div class="productoContainer">
+                <img class="imgProducto" src="Imagenes/papasPringles.jpg" alt="papas Pringles">
+                <p>Stock disponible: <span id="stockProducto6"></span></p>
+                <input type="number" id="cantidadInput6" placeholder="Ingrese cantidad" min="0">
+                <button id="comprarButton6">Comprar</button>
+            </div>
+
+            <div class="productoContainer">
+                <img class="imgProducto" src="Imagenes/quesoMuzzarella.jpg" alt="queso Muzzarella">
+                <p>Stock disponible: <span id="stockProducto7"></span></p>
+                <input type="number" id="cantidadInput7" placeholder="Ingrese cantidad" min="0">
+                <button id="comprarButton7">Comprar</button>
+            </div>
+
+            <div class="productoContainer">
+                <img class="imgProducto" src="Imagenes/azucarLedesma.jpg" alt="azucarLedesma">
+                <p>Stock disponible: <span id="stockProducto8"></span></p>
+                <input type="number" id="cantidadInput8" placeholder="Ingrese cantidad" min="0">
+                <button id="comprarButton8">Comprar</button>
+            </div>
 
 
+    </div>
+
+    <p id="totalCompra"> </p>
+   
+    <footer>
+        <div class="container">
+            <img src="Imagenes/Green Circle Online Store Shopping Basket Logo.png" alt="logotipo" class="logo">
+        </div>
+        <div class="localesFooter">
+            <h3>LOCALES</h3>
+            <ul>
+                <li>
+                    <i>&#128204; AV CONSTITUCION 4191</i>
+                    <i>&#128204;NEUQUEN 1975</i>
+                    <i>&#128204;AV PRINGLES 1502</i>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="horariosFooter">
+            <h3>HORARIOS</h3>
+            <p>LOS ESPERAMOS DE <br> LUNES A SABADOS DE 8 A 20HS</p>
+        </div>
+        <div class="iconosFooter">
+                <img src="Imagenes/facebook.png" alt="logoFace">
+                <img src="Imagenes/instagram.png" alt="logoInsta">
+            </div>       
+        </div>
+    </footer>
     
     
     <script src="productos.js"></script>

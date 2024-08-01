@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <div class="container">
-            <img src="Imagenes/grocery-cart.png" alt="logotipo" class="logo">
+            <img src="Imagenes/Green Circle Online Store Shopping Basket Logo2.png" alt="logotipo" class="logoHeader">
         </div>
         <nav>
             <a href="index.html" target="_blank"> INICIO </a>
@@ -19,36 +20,43 @@
     </header>
 
     
-    <div>
-        <p>OFERTAS</p>
-    </div>
-
-    <section> 
-        <div class="ofertas">  <!-- aca quiere hacer una card con varios productos-->
+    <section>
         
+        <div class="tituloOfertas">
+            <h2>OFERTAS</h2>
+            <a href="productos.html" target="_blank"> Ver todos los productos</a>
+        </div>
+    
+        <div class="ofertas">  <!-- aca quiere hacer una card con varios productos-->
+
             <div class="card">
                 <img class="imgProducto" src="Imagenes/yerbaMañanita.jpg" alt="yerbaMañanita">
                 <p class="nombreProducto">Yerba Mañanita </p>  <!-- de alguna forma vamos a tener que acceder a este parrafo con javascript y cambiar-->
                 <p class="precioProducto"> $ <span> 3000 </span> </p> <!--el span para acceder mas facil al precio y mantener el signo $-->
             </div>
             <div class="card">
-                <img class="imgProducto" src="Imagenes/galletitasRumba.jpg" alt="galletitasRumba">
+                <img class="imgProducto" src="Imagenes/galletitasRumba.jpg" alt="galletitas Rumba">
                 <p>Galletitas Rumba</p>
                 <p>$900</p>
             </div> 
             <div class="card">
-                <img class="imgProducto" src="Imagenes/cervezaQuilmes.jpg" alt="cervezaQuilmes">
+                <img class="imgProducto" src="Imagenes/cervezaQuilmes.jpg" alt="cerveza Quilmes">
                 <p>Cerveza Quilmes</p>
                 <p>$1500</p>
             </div>
             <div class="card">
-                <img class="imgProducto" src="Imagenes/dulceDeLeche.jpg.webp" alt="dulceDeLeche">
+                <img class="imgProducto" src="Imagenes/dulceDeLeche.jpg.webp" alt="dulce De Leche">
                 <p>Dulce de leche Colonial</p>
                 <p>$2000</p>
             </div>
         </div>
     </section>  
 
+
+    <div class="tituloHistoria">
+        <h5>Fundados en 1994</h5>
+        <h1>SOMOS MAYORISTAS</h1>
+    </div>
 
     <div class="historia">
 
@@ -69,6 +77,8 @@
                 Blanditiis quam distinctio iusto laboriosam porro, minima optio aperiam itaque, libero inventore eaque!
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit enim sed, reprehenderit voluptates fuga veniam unde quae, 
                 accusantium aliquam neque iste animi incidunt ut voluptas dignissimos illum earum doloribus dicta!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quos dolor. Quia nobis ipsa recusandae autem minima eum, 
+                laboriosam perferendis quisquam fugit reprehenderit unde iure quibusdam cupiditate vel blanditiis placeat.
             </p>
         </div>
     
@@ -82,13 +92,35 @@
     <figure>   <!-- solo se usa para una sola imagen-->
         <img src="" alt="">
         <figcaption>
-            Descripcion...
+            
         </figcaption>
     </figure>
     
 
     <footer>
-
+        <div class="container">
+            <img src="Imagenes/Green Circle Online Store Shopping Basket Logo.png" alt="logotipo" class="logo">
+        </div>
+        <div class="localesFooter">
+            <h3>LOCALES</h3>
+            <ul>
+                <li>
+                    <i>&#128204; AV CONSTITUCION 4191</i>
+                    <i>&#128204;NEUQUEN 1975</i>
+                    <i>&#128204;AV PRINGLES 1502</i>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="horariosFooter">
+            <h3>HORARIOS</h3>
+            <p>LOS ESPERAMOS DE <br> LUNES A SABADOS DE 8 A 20HS</p>
+        </div>
+        <div class="iconosFooter">
+                <img src="Imagenes/facebook.png" alt="logoFace">
+                <img src="Imagenes/instagram.png" alt="logoInsta">
+            </div>       
+        </div>
     </footer>
 
    <script src="scripts.js"></script> 
