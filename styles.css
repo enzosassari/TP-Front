@@ -144,7 +144,7 @@ footer div ul{
 
 .productoContainer {
     width: 320px;
-    height: 450px;
+    height: 550px;
     margin: 20px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(132, 126, 126);
@@ -156,4 +156,13 @@ footer div ul{
     height: 350px;
     width: 280px;
     border-radius: 10px;
+}
+
+
+#totalCompra{
+    text-align: center;
+}
+
+#tituloProductos{
+    text-align: center;
 }

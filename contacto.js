@@ -5,7 +5,7 @@ let email = document.getElementById("email");
 let telefono = document.getElementById("telefono"); 
 let caja = document.getElementById("caja"); 
 
-let btnEnviar = document.getElementById("enviar");
+let btnEnviar = document.getElementById("btnEnviar");
 let informacion = [];
 
 document.getElementById('myForm').addEventListener("submit", function(e) {

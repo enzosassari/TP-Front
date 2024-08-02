@@ -1,0 +1,42 @@
+
+.formContainer{
+    display: flex;
+    margin: 0px 300px 0px 300px;
+    justify-content:space-around
+    
+}
+
+.formContacto{ 
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+input {
+    width: 400px; 
+    height: 30px; 
+    margin: 10px;
+    font-size: 14px; 
+    
+}
+
+#caja{
+    width: 400px; 
+    height: 200px; 
+    
+}
+
+#btnEnviar{
+        width: 100px; 
+        height: 50px; 
+        border-radius: 50px;
+}

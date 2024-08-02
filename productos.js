@@ -1,11 +1,9 @@
 
 
-/*function actualizarDatos(){
-
-}*/
-
 
 let totalCompra = 0;
+
+//------------------ INGRESO DE PRODUCTOS COMO OBJETOS------------------------------
 
 const producto1 = {
     nombre: "Yerba Union",
@@ -56,14 +54,16 @@ const producto8 = {
 };
 
 
-// Función para descontar la cantidad y actualizar el stock
+
+// Función para descontar la cantidad y actualizar cantidad
 function descontarCantidad(producto, inputId, stockId) {
     const cantidadIngresada = parseInt(document.getElementById(inputId).value);
         if (producto.cantidad >= cantidadIngresada && cantidadIngresada > 0) {
             producto.cantidad -= cantidadIngresada;
             totalCompra += (producto.precio * cantidadIngresada);
-            document.querySelector("#totalCompra").innerHTML= ("El total de la compra es : " + totalCompra); 
+            document.querySelector("#totalCompra").innerHTML= ("El total de la compra es $ " + totalCompra); 
             document.getElementById(stockId).textContent = producto.cantidad;
+            
         } else {
             alert(`No hay suficiente stock de ${producto.nombre}.`);
         }
@@ -75,7 +75,6 @@ function borrarInputs(inputId){
 }
 
 
-// Añadir eventos de clic a cada botón con sus respectivos productos
 document.getElementById("comprarButton1").addEventListener("click", function() {
     descontarCantidad(producto1, "cantidadInput1", "stockProducto1");
     borrarInputs("cantidadInput1");
@@ -117,5 +116,19 @@ document.getElementById("comprarButton8").addEventListener("click", function() {
 });
 
 
-/**  document.querySelector(".arroz").innerHTML=`El producto ${producto[0].nombre} tiene un stock de ${producto[0].cantidad}`;  */
-    
+//------------------------- MOSTRAR NOMBRES Y PRECIOS ------------------------
+
+// Array que contiene todos los productos
+const productos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8];
+
+// Función para recorrer los objetos y actualizar los <p> con innerHTML
+function mostrarNombrePrecio(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        document.getElementById(`productoNombre${i+1}`).innerHTML = ` ${arr[i].nombre}`;
+        document.getElementById(`productoPrecio${i+1}`).innerHTML = `Precio $ ${arr[i].precio}`;
+    }
+}
+// Llamada a la función para mostrar los nombres y precios
+mostrarNombrePrecio(productos);
+
+

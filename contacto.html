@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesForm.css"> <!--estilos exclusivos del form-->
 </head>
 <body>
 
@@ -19,24 +20,41 @@
         </nav>
     </header>
 
-    <h2>Formulario de Contacto</h2>
+    <h1>Escribinos!</h1>
+    <h2>Por sugerencias o consultas</h2>
 
-    <form action="" id="myForm">
-        <!--<label for="nombre">Nombre:</label>-->
-        <input type="text" id="nombre" required minlength="3" maxlength="30">
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" >
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-        <label for="telefono">Telefono:</label>
-        <input type="number" pattern="[0-9]{10}" id="telefono">
-        <label for="caja">Consulta:</label>
-        <input type="text" id="caja" placeholder="Introduzca su Consulta" maxlength="50" required>
+    <div class="formContainer">
+
+        <div class="formContacto">
+            <form action="" id="myForm">
+                
+                <input type="text" id="nombre" required minlength="3" maxlength="30" placeholder="Nombre">
+                
+                <input type="text" id="apellido" placeholder="Apellido" >
+                
+                <input type="email" id="email" placeholder="email" required>
+                
+                <input type="number" pattern="[0-9]{10}" id="telefono" placeholder="telefono">
+                
+                <input type="text" id="caja" placeholder="Mensaje" maxlength="50" required>
+                
+                <button id="btnEnviar" type="submit">Enviar</button>  
+            </form>
+        </div>
+       
+        <div class="descripcionForm">
+            <p> Nos importa saber qué opinás para ajustar <br>
+                 lo que no sale tan bien o mandarle buena onda al equipo. <br>
+                 Si tenes dudas o consultas, comunicate con nosotros
+            </p>
+        </div>
         
-        <button id="enviar" type="submit">Enviar</button>  
+    </div>
     
-    </form>
-    
+
+  
+
+
     <footer>
         <div class="container">
             <img src="Imagenes/Green Circle Online Store Shopping Basket Logo.png" alt="logotipo" class="logo">
