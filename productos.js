@@ -63,7 +63,6 @@ function descontarCantidad(producto, inputId, stockId) {
             totalCompra += (producto.precio * cantidadIngresada);
             document.querySelector("#totalCompra").innerHTML= ("El total de la compra es $ " + totalCompra); 
             document.getElementById(stockId).textContent = producto.cantidad;
-            
         } else {
             alert(`No hay suficiente stock de ${producto.nombre}.`);
         } 
