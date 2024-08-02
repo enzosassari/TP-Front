@@ -24,5 +24,8 @@ document.getElementById('myForm').addEventListener("submit", function(e) {
     let blob = new Blob([ informacion ], { type: "text/plain;charset=utf-8"});  //informacion se lo pasamos como array por eso los corchetes
                   //[Enzo,Sassari]  forma de array
     saveAs(blob, "contacto.txt");  //usamos la libreria FileServer.js  ...ponemos blob en el txt
+
+    myForm.reset();  //reseteo el formulario
  
 })
+

@@ -30,18 +30,19 @@
                 
                 <input type="text" id="nombre" required minlength="3" maxlength="30" placeholder="Nombre">
                 
-                <input type="text" id="apellido" placeholder="Apellido" >
+                <input type="text" id="apellido" placeholder="Apellido" required>
                 
                 <input type="email" id="email" placeholder="email" required>
                 
-                <input type="number" pattern="[0-9]{10}" id="telefono" placeholder="telefono">
+                <input type="number" pattern="[0-9]{10}" id="telefono" placeholder="telefono" required>
                 
-                <input type="text" id="caja" placeholder="Mensaje" maxlength="50" required>
+                <input type="text" id="caja" placeholder="Mensaje" maxlength="50" minlength="10" required>
                 
                 <button id="btnEnviar" type="submit">Enviar</button>  
             </form>
         </div>
-       
+        
+
         <div class="descripcionForm">
             <p> Nos importa saber qué opinás para ajustar <br>
                  lo que no sale tan bien o mandarle buena onda al equipo. <br>
@@ -51,9 +52,6 @@
         
     </div>
     
-
-  
-
 
     <footer>
         <div class="container">
