@@ -25,7 +25,7 @@ document.getElementById('myForm').addEventListener("submit", function(e) {
                   //[Enzo,Sassari]  forma de array
     saveAs(blob, "contacto.txt");  //usamos la libreria FileServer.js  ...ponemos blob en el txt
 
-    myForm.reset();  //reseteo el formulario
+    myForm.reset();  //reseteo el formulario cuando lo envio
  
 })
 

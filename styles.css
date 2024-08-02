@@ -58,7 +58,6 @@ nav a{
 }
 
 .card img:hover {
-    background-color: beige;
     transform: scale(1.1);
     opacity: 0.8;
 }
@@ -150,6 +149,11 @@ footer div ul{
     border: 1px solid rgb(132, 126, 126);
     border-radius: 10px;
     text-align: center;
+}
+
+.productoContainer:hover {
+    background-color: beige;
+    opacity: 0.8;
 }
 
 .imgProducto{   

@@ -58,7 +58,7 @@ const producto8 = {
 // Función para descontar la cantidad y actualizar cantidad
 function descontarCantidad(producto, inputId, stockId) {
     const cantidadIngresada = parseInt(document.getElementById(inputId).value);
-        if (producto.cantidad >= cantidadIngresada && cantidadIngresada > 0) {
+        if (producto.cantidad >= cantidadIngresada && cantidadIngresada > 0 ) {
             producto.cantidad -= cantidadIngresada;
             totalCompra += (producto.precio * cantidadIngresada);
             document.querySelector("#totalCompra").innerHTML= ("El total de la compra es $ " + totalCompra); 
@@ -66,7 +66,8 @@ function descontarCantidad(producto, inputId, stockId) {
             
         } else {
             alert(`No hay suficiente stock de ${producto.nombre}.`);
-        }
+        } 
+      
 }
 
 //Funcion para borrar los input
